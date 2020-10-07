@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import "cw_designs.css";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 3
+   
+   Author: Jamie Smith  
+   Date: 10/5/20     
+   
+   Filename: cw_styles.css
+
+   This file contains the screen styles used with the 
+   Cauli-Wood Gallery home page
+
+*/
+
+/* Import Basic Design Styles  */
+nav#bottom{
+   display: flex;
+   flex-wrap: nowrap;
+   -webkit-flex-wrap: nowrap;
+   justify-content: center;
+}
+nav#bottom>ul{
+   max-width: 150px;
+}
+
+article {
+   display: flex;
+   flex-wrap: wrap;
+   -webkit-flex-wrap: wrap;
+   font-size: 2.2em;
+   flex-grow: 2;
+   flex-shrink: 1;
+   flex-basis: 400px;
+}
+
+/* ===============================
+	General Styles for All Devices
+   ===============================
+*/
+p#links{
+   display: flex;
+   flex-wrap: nowrap;
+   -webkit-flex-wrap: nowrap;
+   justify-content: space-around;
+}
+
+#links > a {
+   color:white;
+   background-color:rgb(220,27,27);
+   border-radius: 20px;
+   text-decoration: none;
+   text-align:center;
+   padding-left:3px;
+   padding-right:3px;
+   margin: 5px;
+   font-size: 1.5rem;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+
+@media only screen and (min-width: 481px){
+   body{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+   #top > ul{
+      display: flex;
+      background-color: rgb(51, 51, 51);
+      height: 50px;
+      justify-content: space-evenly;
+      align-items: center;
+   }
+   #top li{
+      max-width:80px;
+   } 
+   #links {
+      display:none !important;
+   }
+}
+
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+   body {
+      color:rgb(211, 211, 211);
+      background-color: rgb(51, 51, 51);
+    }
+    aside{
+       display: none;
+    }
+    article > img{
+       display: none;
+    }
+    section#spotlight{
+       display: none;
+    }
+    
+   nav#top ul{
+       display: flex;
+       flex-wrap: wrap;
+       -webkit-flex-wrap: wrap;
+       font-size: 2.2em;
+       flex-grow: 1;
+       flex-shrink: 1;
+       flex-basis: 130px;
+       padding:10px;
+   }
+  nav#top ul li:nth-of-type(1){
+      background-image: url("cw_image01.png");
+      background-position: center center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      min-width: 25%;
+      height:auto;
+   }
+   nav#top ul li:nth-of-type(2){
+      background-image: url("cw_image02.png");
+      background-position: center center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      min-width: 25%;
+      height:auto;
+   }
+   nav#top  ul li:nth-of-type(3){
+      background-image: url("cw_image03.png");
+      background-position: center center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      min-width: 25%;
+      height:auto;
+   }
+   nav#top ul li:nth-of-type(4){
+      background-image: url("cw_image04.png");
+      background-position: center center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      min-width: 25%;
+      height:auto;
+   }
+   nav#top ul li:nth-of-type(5){
+      background-image: url("cw_image05.png");
+      background-position: center center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      min-width: 25%;
+      height:auto;
+   }
+   nav#top ul li:nth-of-type(6){
+      background-image: url("cw_image06.png");
+      background-position: center center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      min-width: 25%;
+      height:auto;
+   }
+   #top li{
+      max-width:100%;
+   } 
+ }	
+
+
