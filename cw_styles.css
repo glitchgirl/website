@@ -22,9 +22,11 @@ nav#bottom{
    flex-wrap: nowrap;
    -webkit-flex-wrap: nowrap;
    justify-content: center;
+   text-align: center;
 }
 nav#bottom>ul{
    max-width: 150px;
+   padding: 0px 5px;
 }
 
 article {
@@ -88,6 +90,9 @@ p#links{
    } 
    #links {
       display:none !important;
+   }
+   aside{
+      width:33%;
    }
 }
 
